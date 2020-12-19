@@ -36,31 +36,42 @@ body .slider .slide {
 }
   
 body .slider .slide:nth-child(1) {
-    background-image: url(img/glowna.jpg);
+    background-image: url(img/glowna.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
 }
   
 body .slider .slide:nth-child(2) {
-    background-color: #6363d4;
+    background-color: #1d1d1d;
 }
   
 body .slider .slide:nth-child(3) {
-    background-color: #88da88;
+    background-color: #1d1d1d;
 }
   
 body .slider .slide:nth-child(4) {
-    background-color: #e9e992;
+    background-color: #1d1d1d;
 }
 
-.body .slider .slide p{
+body .slider .slide:nth-child(5) {
+    background-color: #1d1d1d;
+}
+
+body .slider .slide:nth-child(6) {
+    background-color: #1d1d1d;
+}
+
+body .slider .slide p{
     font-family: 'Kaushan Script', cursive;
     color:white;
     font-size:5em;
-    margin:0;
+    margin: 0%;
+    margin-bottom: 1%;
 }
 
 body .slider .slide a{
     font-family: 'Thasadith';
-    color:red;
+    color:rgba(148, 138, 97, 0.788);
     text-decoration: none;
 }
   
@@ -84,18 +95,23 @@ body .slider .dots div {
   
 body nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     border: 2px dashed blue;
     position: sticky;
     top: 0;
+    background-color: rgba(148, 138, 97, 0.589);
+    color: white;
 }
   
 body nav div {
     border: 2px dashed red;
+    justify-content: flex-end;
+    
 }
   
 body section {
     height: 100vh;
+    background-color: #1d1d1d;
     border: 2px dashed green;
 }
 
