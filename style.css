@@ -64,9 +64,10 @@ body .slider .slide:nth-child(6) {
 body .slider .slide p{
     font-family: 'Kaushan Script', cursive;
     color:white;
+    
     font-size:5em;
     margin: 0%;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 
 body .slider .slide a{
@@ -115,8 +116,40 @@ body section {
     border: 2px dashed green;
 }
 
-.first-site img{
-    background-image: url(img/glowna.jpg);
+
+header .first-site{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(241, 248, 250, 0.692);
+    min-height: 100vh;
+    margin: 0;
+}
+header .first-site .first-item{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 9%;
+    flex: 2;
+    font-size: 0.6em;
+}
+header .first-site .first-item h2{
+    font-size: 3em;
+    color: rgb(90, 78, 78);
+    margin-bottom: 0;
+    line-height: 150%;
+}
+
+header .first-site .first-img{
+    text-align: right;
+}
+
+header .first-site img{
+    max-width:100%;
+    max-height: 100vh;
+    /*float: right;*/
 }
 
 
