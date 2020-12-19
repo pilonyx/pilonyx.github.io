@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <div class="slider">
+    <div class="slide"> 
+      <p>O mnie</p>
+      <a href="about.html">Zobacz&nbsp;więcej</a>
+    </div>
+    <div class="slide"> 
+      <p>Technologie</p>
+      <a href="#tech">Zobacz&nbsp;więcej</a>
+    </div>
+    <div class="slide"> 
+      <p>Portfolio</p>
+      <a href="#portfolio">Zobacz więcej</a>
+    </div>
+    <div class="slide"> 
+      <p>Kontakt</p>
+      <a href="#contact">Zobacz więcej</a>
+    </div>
+
+    <div class="dots"></div>
+  </div>
+
+  <nav>
+    <div class="menu-item">O mnie</div>
+    <div class="menu-item">Tech</div>
+    <div class="menu-item">Port</div>
+    <div class="menu-item">kontakt</div>
+  </nav>
+
+
+
+  <section id="about">
+    O Mnie
+  </section>
+  <section id="tech">
+    Technologie
+  </section>
+  <section id="portfolio">
+    Portfolio
+  </section>
+  <section id="contact">
+    Kontakt
+  </section>
+
+
+
+
+<script>
+  let slide = document.getElementsByClassName("slide");
+  currentSlide = 0;
+  fade(currentSlide);
+
+  let dots = document.querySelector(".dots");
+  for(let x = 0; x < slide.length; x++){
+    let dot = document.createElement("div");
+    dot.onclick = ()=>{
+      fade(x);
+    }      
+    dots.appendChild(dot);
+  }
+
+  function fade(slidenr,time = 200){
+    currentSlide = slidenr;
+    let it = 100;
+    let cit = 0;
+    let what = slide[slidenr];
+    what.style.zIndex = 1;
+    what.style.opacity = 0;
+    let interval = setInterval(() => {
+      if(cit > 10){
+        what.style.display = "flex";
+      }
+      what.style.opacity = "0."+cit;
+      cit++;
+      if(cit == it){
+        what.style.zIndex = 0;
+        what.style.opacity = "1";
+        var dot = dots.getElementsByTagName("div");
+        for(x = 0; x < slide.length; x++){
+          if(x != slidenr){
+            slide[x].style.display = "none";
+            dot[x].style.backgroundColor = "#000";
+          }else{
+            dot[x].style.backgroundColor = "red";  
+          }
+        }
+        clearInterval(interval);
+      }
+    },time/it);
+  }
+
+  setInterval(()=>{
+    currentSlide++;
+    if(currentSlide >= slide.length){
+      currentSlide = 0;
+    }
+    fade(currentSlide);
+  },5000)
+
+</script>
+
+</body>
+</html>

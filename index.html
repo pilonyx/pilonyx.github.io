@@ -4,8 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Thasadith:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    Hello World!
-</body>
-</html>
+    <div class="slider">
+        <div class="slide">
+            <p>Portfolio</p>
+            <a href="home.html"></a>
+        </div>
+        <div class="slide"> 
+            <p>About&nbsp;me</p>
+            <a href="about.html">See&nbsp;more</a>
+        </div>
+        <div class="slide"> 
+            <p>Interests</p>
+            <a href="#interests.html">See&nbsp;more</a>
+        </div>
+        <div class="slide"> 
+            <p>Projects</p>
+            <a href="#projects.html">See&nbsp;more</a>
+        </div>
+        <div class="slide"> 
+            <p>Social&nbsp;Media</p>
+            <a href="#socialmedia">See&nbsp;more</a>
+        </div>
+        <div class="slide"> 
+            <p>Contact</p>
+            <a href="#contact">See&nbsp;more</a>
+        </div>
+    
+        <div class="dots"></div>
+        </div>
+  
+    <nav>
+      <div class="menu-item">About&nbsp;me</div>
+      <div class="menu-item">Interests</div>
+      <div class="menu-item">Projects</div>
+      <div class="menu-item">Social&nbsp;Media</div>
+      <div class="menu-item">Contact</div>
+    </nav>
+  
+  
+  
+    <section id="about">
+        About&nbsp;me
+    </section>
+    <section id="interests">
+        Interests
+    </section>
+    <section id="projects">
+        Projects
+    </section>
+    <section id="socialmedia">
+        Social&nbsp;Media
+    </section>
+    <section id="contact">
+        Contact
+    </section>
+  
+  
+  
+  
+  <script>
+    let slide = document.getElementsByClassName("slide");
+    currentSlide = 0;
+    fade(currentSlide);
+  
+    let dots = document.querySelector(".dots");
+    for(let x = 0; x < slide.length; x++){
+      let dot = document.createElement("div");
+      dot.onclick = ()=>{
+        fade(x);
+      }      
+      dots.appendChild(dot);
+    }
+  
+    function fade(slidenr,time = 200){
+      currentSlide = slidenr;
+      let it = 100;
+      let cit = 0;
+      let what = slide[slidenr];
+      what.style.zIndex = 1;
+      what.style.opacity = 0;
+      let interval = setInterval(() => {
+        if(cit > 10){
+          what.style.display = "flex";
+        }
+        what.style.opacity = "0."+cit;
+        cit++;
+        if(cit == it){
+          what.style.zIndex = 0;
+          what.style.opacity = "1";
+          var dot = dots.getElementsByTagName("div");
+          for(x = 0; x < slide.length; x++){
+            if(x != slidenr){
+              slide[x].style.display = "none";
+              dot[x].style.backgroundColor = "#000";
+            }else{
+              dot[x].style.backgroundColor = "red";  
+            }
+          }
+          clearInterval(interval);
+        }
+      },time/it);
+    }
+  
+    setInterval(()=>{
+      currentSlide++;
+      if(currentSlide >= slide.length){
+        currentSlide = 0;
+      }
+      fade(currentSlide);
+    },5000)
+  
+  </script>
+  
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+<!--<body>
+    <header>
+        <nav class="Menu">
+            <a href="#" class="About">About&nbsp;me</a>
+            <a href="#" class="Skills">Skills</a>
+            <a href="#" class="Interests">Interests</a>
+            <a href="#" class="SocialMedia">Social&nbsp;Media</a>
+            <a href="#" class="Contact">Contact</a>
+        </nav>
+
+        <section class="first-site">
+            <--<div class="first-image">
+                <img src="img/glowna.jpg" alt="home">
+            </div> --
+
+        </section>
+
+        <section class="second-site">
+            <div class="second-item">
+                <h2>About&nbsp;me</h2>
+                <div class="subtitle">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consectetur modi molestias repellat eos nesciunt provident, ipsa in unde facilis velit minima corrupti doloremque voluptatem magni dolorum atque, laborum fuga!</p>
+                </div>
+                <img src="img/me.jpg" alt="me">
+            </div>
+        </section>
+
+
+    </header>
+-->
