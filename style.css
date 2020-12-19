@@ -35,7 +35,7 @@ body .slider .slide {
 }
   
 body .slider .slide:nth-child(1) {
-    background-color: #e47676;
+    background-image: url(img/glowna.jpg);
 }
   
 body .slider .slide:nth-child(2) {
@@ -86,7 +86,7 @@ body section {
 }
 
 .first-site img{
-    background-image: url(/img/glowna.jpg);
+    background-image: url(img/glowna.jpg);
 }
 
 
