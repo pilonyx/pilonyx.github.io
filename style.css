@@ -71,7 +71,6 @@ body .slider p{
     padding: 3%;
     margin-left: 5%;
     margin-right: 5%;
-    border: 2px solid white;
 }   
 
 body .slider .slide p{
@@ -85,9 +84,8 @@ body .slider .slide p{
 
 body .slider .slide a{
     font-family: 'Spartan', serif;
-    color:rgb(0, 0, 0);
+    color: white;
     font-size: 13px;
-    font-weight: bold;
     text-decoration: none;
 }
   
