@@ -110,7 +110,7 @@ body nav div {
     
 }
   
-body section {
+body page{
     height: 100vh;
     background-color: #1d1d1d;
     border: 2px dashed green;
@@ -121,9 +121,12 @@ header .first-site{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(241, 248, 250, 0.692);
     min-height: 100vh;
     margin: 0;
+    background-color: #1d1d1d;
+
+
+
 }
 header .first-site .first-item{
     min-height: 100vh;
@@ -135,11 +138,18 @@ header .first-site .first-item{
     flex: 2;
     font-size: 0.6em;
 }
-header .first-site .first-item h2{
+header .first-site .first-item h3{
+    font-family: 'Kaushan Script' cursive;
     font-size: 3em;
-    color: rgb(90, 78, 78);
+    color: rgba(148, 138, 97, 0.788);
     margin-bottom: 0;
     line-height: 150%;
+}
+
+header .first-site .first-item p{
+    color: white;
+    font-family: 'Thasadith';
+    font-size: 1.5em;
 }
 
 header .first-site .first-img{
@@ -147,8 +157,14 @@ header .first-site .first-img{
 }
 
 header .first-site img{
-    max-width:100%;
+    max-width:70%;
     max-height: 100vh;
+    border-radius: 50%;
+    border: 2px solid rgba(148, 138, 97, 0.788);
+}
+
+
+
     /*float: right;*/
 }
 
