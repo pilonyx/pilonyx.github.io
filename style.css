@@ -37,7 +37,7 @@ body .slider .slide {
 }
   
 body .slider .slide:nth-child(1) {
-    background-image: url(img/glowna.jpg); 
+    background-image: url(img/maleglowna.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
 }
