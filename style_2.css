@@ -1,84 +1,134 @@
-* {
-  box-sizing: border-box;
+*{
+    box-sizing: border-box;
 }
-
+  
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
-
+  
 body {
-  margin: 0;
-}
+    margin: 0;
+    font-family: 'Thasadith', sans-serif;
 
+}
+  
 body .slider {
-  border: 2px dashed red;
-  background-color: #000;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  display: flex;
+    border: 2px dashed red;
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
 }
-
+  
 body .slider .slide {
-  border: 2px dashed blue;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
+    border: 2px dashed blue;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
 }
-
+  
 body .slider .slide:nth-child(1) {
-  background-color: #e47676;
+    background-image: url(img/glowna.jpg);
 }
-
+  
 body .slider .slide:nth-child(2) {
-  background-color: #6363d4;
+    background-color: #6363d4;
 }
-
+  
 body .slider .slide:nth-child(3) {
-  background-color: #88da88;
+    background-color: #88da88;
 }
-
+  
 body .slider .slide:nth-child(4) {
-  background-color: #e9e992;
+    background-color: #e9e992;
+}
+  
+body .slider .slide p{
+  font-family: 'Kaushan Script', cursive;
+  color:red;
+  font-size: 4em;
+  margin:0;
+}
+body .slider .slide a{
+  font-family: 'Thasadith';
+  color:blue;
+  text-decoration:none;
 }
 
 body .slider .dots {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  z-index: 2;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
 }
-
+  
 body .slider .dots div {
-  background-color: red;
-  width: 15px;
-  height: 15px;
-  margin: 10px;
-  border-radius: 50%;
-  cursor: pointer;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
 }
-
+  
 body nav {
-  display: flex;
-  justify-content: space-around;
-  border: 2px dashed blue;
-  position: sticky;
-  top: 0;
+    display: flex;
+    justify-content: space-around;
+    border: 2px dashed blue;
+    position: sticky;
+    top: 0;
 }
-
+  
 body nav div {
-  border: 2px dashed red;
+    border: 2px dashed red;
+}
+  
+body section {
+    height: 100vh;
+    border: 2px dashed green;
 }
 
-body section {
-  height: 100vh;
-  border: 2px dashed green;
+.first-site img{
+    background-image: url(img/glowna.jpg);
 }
+
+
+/*
+header .Menu{
+    display: flex;
+    font-size: 16px;
+    justify-content: flex-end;
+    position: sticky;
+    width: 60%;
+    right: 3%;
+    margin-top: 2%; 
+}
+
+.Menu a{
+    text-decoration: none;
+    padding: 2%;
+    justify-content: right;
+}
+
+
+.first-site img{
+    background-image: url(img/glowna.jpg);
+    width: 100%;
+    margin-top: 0;
+}
+
+.second-site{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}*/

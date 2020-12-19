@@ -20,6 +20,7 @@ body .slider {
     position: relative;
     display: flex;
 }
+
   
 body .slider .slide {
     border: 2px dashed blue;
@@ -48,6 +49,19 @@ body .slider .slide:nth-child(3) {
   
 body .slider .slide:nth-child(4) {
     background-color: #e9e992;
+}
+
+.body .slider .slide p{
+    font-family: 'Kaushan Script', cursive;
+    color:white;
+    font-size:5em;
+    margin:0;
+}
+
+body .slider .slide a{
+    font-family: 'Thasadith';
+    color:red;
+    text-decoration: none;
 }
   
 body .slider .dots {
