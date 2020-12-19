@@ -8,10 +8,11 @@ html {
   
 body {
     margin: 0;
-    font-family: 'Thasadith', sans-serif;
+    font-family: 'Spartan', serif;
 
 }
-  
+
+
 body .slider {
     border: 2px dashed red;
     background-color: #000;
@@ -61,18 +62,32 @@ body .slider .slide:nth-child(6) {
     background-color: #1d1d1d;
 }
 
+
+body .slider p{
+    font-family: 'Qwigley', cursive;
+    color: white;
+    font-size: 10em;
+    margin: 0%;
+    padding: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 2px solid white;
+}   
+
 body .slider .slide p{
-    font-family: 'Kaushan Script', cursive;
-    color:white;
-    
-    font-size:5em;
+    font-family: 'Qwigley', cursive;
+    color: rgba(247, 216, 81, 0.753);
+    font-size: 10em;
     margin: 0%;
     margin-bottom: 2%;
+    text-decoration: blink;
 }
 
 body .slider .slide a{
-    font-family: 'Thasadith';
-    color:rgba(148, 138, 97, 0.788);
+    font-family: 'Spartan', serif;
+    color:rgb(0, 0, 0);
+    font-size: 13px;
+    font-weight: bold;
     text-decoration: none;
 }
   
@@ -84,33 +99,38 @@ body .slider .dots {
     bottom: 0;
     z-index: 2;
 }
+
   
 body .slider .dots div {
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     width: 15px;
     height: 15px;
     margin: 10px;
     border-radius: 50%;
     cursor: pointer;
 }
-  
+
 body nav {
     display: flex;
     justify-content: flex-end;
     border: 2px dashed blue;
     position: sticky;
     top: 0;
-    background-color: rgba(148, 138, 97, 0.589);
+    background-color: rgba(247, 216, 81, 0.753);
     color: white;
+    text-decoration: none;
 }
   
 body nav div {
     border: 2px dashed red;
     justify-content: flex-end;
+    text-decoration: none;
+    color: black;
     
 }
+
   
-body page{
+body section{
     height: 100vh;
     background-color: #1d1d1d;
     border: 2px dashed green;
@@ -139,17 +159,17 @@ header .first-site .first-item{
     font-size: 0.6em;
 }
 header .first-site .first-item h3{
-    font-family: 'Kaushan Script' cursive;
-    font-size: 3em;
-    color: rgba(148, 138, 97, 0.788);
+    font-family: 'Qwigley', cursive;
+    font-size: 4em;
+    color: rgba(247, 216, 81, 0.753);
     margin-bottom: 0;
     line-height: 150%;
 }
 
 header .first-site .first-item p{
     color: white;
-    font-family: 'Thasadith';
-    font-size: 1.5em;
+    font-family: 'Spartan',serif;
+    font-size: 1.2em;
 }
 
 header .first-site .first-img{
@@ -160,12 +180,7 @@ header .first-site img{
     max-width:70%;
     max-height: 100vh;
     border-radius: 50%;
-    border: 2px solid rgba(148, 138, 97, 0.788);
-}
-
-
-
-    /*float: right;*/
+    border: 2px solid rgba(247, 216, 81, 0.753);
 }
 
 
