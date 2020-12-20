@@ -118,12 +118,17 @@ body nav {
 }
   
 body nav div {
-    border: 2px dashed red;
     justify-content: flex-end;
     text-decoration: none;
     color: black;
-    
+    border: green;
 }
+
+body nav .menu{
+    border: 2px solid green;
+    background-color: rgba(247, 216, 81, 0.753);
+}
+
 
   
 body section{
